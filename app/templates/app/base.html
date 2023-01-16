@@ -52,13 +52,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="profileDropdown">
                 <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
-                <li><a class="dropdown-item" href="{% url 'orders' %}">Orders</a></li>
-                <li><a class="dropdown-item" href="{% url 'passwordchange' %}">Change Password</a></li>
                 <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
               </ul> 
-            </li>
-            <li class="nav-item mx-2">
-             <a href="{% url 'add-to-cart' %}" class="nav-link text-white"><span class="badge bg-danger">4</span> Cart </a>
             </li>
             {% else %}
             <li class="nav-item mx-2">
@@ -73,7 +68,7 @@
        </div>
      </div>
     </nav>
-    {% block banner_slider %} {% endblock banner_slider %}
+  
     {% block livesale %} {% endblock livesale %}
     {% block main-content %} {% endblock main-content %}
 
